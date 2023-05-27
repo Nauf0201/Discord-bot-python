@@ -1,3 +1,3 @@
 # Discord-bot
-#the-bot-can-count
-#the-bot-can-multiply
+The bot can count
+The bot can do multiply
