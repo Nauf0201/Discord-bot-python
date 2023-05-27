@@ -19,6 +19,10 @@ async def smile(ctx):
     await ctx.send(f':D')
 
 @bot.command()
+async def cry(ctx):
+    await ctx.send(f':_(')
+
+@bot.command()
 async def plus(ctx, letter_1, letter_2):
     await ctx.send(int(letter_1) + int(letter_2))
 
@@ -26,9 +30,12 @@ async def plus(ctx, letter_1, letter_2):
 async def multiply(ctx, number_1, number_2):
     await ctx.send(int(number_1) * int(number_2))
 
+@bot.command()
+async def pangkat(ctx, number_1, number_2):
+    await ctx.send(int(number_1) ** int(number_2))
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
-bot.run("YOUR TOKEN HERE!")
+bot.run("SECRET TOKEN!")
