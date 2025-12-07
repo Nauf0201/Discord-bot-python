@@ -2,6 +2,7 @@ import random
 import discord
 from discord.ext import commands
 from discord.ui import View, Button
+import os
 
 # try :
 intents = discord.Intents.default()
@@ -205,4 +206,4 @@ async def heh(ctx, count_heh = 5):
 
 #Token
 
-bot.run("SECRET TOKEN")
+bot.run(os.getenv("TOKEN"))
